@@ -81,7 +81,7 @@ class App extends Component {
         </Grid>
         <Header as='h5' icon textAlign='center' className="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
-          Coded by <a href="https://www.gdteam.com.br/">Paulo Henrique Stocco Zancanaro</a>.
+          Coded by <a href="https://github.com/paulohsz/">Paulo Henrique Stocco Zancanaro</a>.
         </Header>
       </Container>
     );
