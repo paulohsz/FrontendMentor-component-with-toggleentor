@@ -1,26 +1,96 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Container, Divider, Grid, Responsive, Segment, Header,  Checkbox, Button } from 'semantic-ui-react'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.stateInicial = {
+      text: '',
+      checkBox: false,
+    };
+
+    this.state = this.stateInicial;
+
+
+
+  }
+
+  render() {
+    return (
+      <Container className="cont-b">
+        <Header as='h2' icon textAlign='center'>
+          <Header.Content className="headerTitle">Our Pricing</Header.Content>
+          
+          <div style={{ fontSize: "15px" }} className="headerSubTitle">Annually <Checkbox 
+            toggle 
+            checked={this.state.checkBox}  
+            onClick={() => {this.setState( ({checkBox}) => ({checkBox: !checkBox}))}} 
+          /> Monthly
+          </div>
+        </Header>
+        <Grid stackable textAlign="center" columns={3} className="planNormal">
+          <Grid.Column>
+            <Responsive as={Segment}>
+              Basic
+              <div className="price">${ this.state.checkBox ? "19.99" : "199.99" }</div>
+              <Divider />500 GB Storage
+              <Divider />
+                2 Users Allowed
+              <Divider />
+                Send up to 3 GB
+              <Divider />
+              <Button fluid className="button-sides">Learn More</Button>
+            </Responsive>
+          </Grid.Column>
+
+          <Grid.Column style={{marginTop: "-14px"}} className="middlePlan">
+            <Responsive as={Segment}>
+            <Responsive minWidth={992} style={{height: "16px"}}>
+              
+            </Responsive>
+            Professional
+              <div className="price">${ this.state.checkBox ? "24.99" : "249.99" }</div>
+              <Divider />1 TB Storage
+              <Divider />5 Users Allowed
+              <Divider />Send up to 10 GB
+              <Divider />
+              <Button fluid className="button-sides">Learn More</Button>
+              <Responsive minWidth={992} style={{height: "16px"}}>
+              
+              </Responsive>
+            </Responsive>
+          </Grid.Column>
+
+          <Grid.Column>
+            <Responsive as={Segment}>
+              Basic
+              <div className="price">${ this.state.checkBox ? "39.99" : "399.99" }</div>
+              <Divider />2 TB Storage
+              <Divider />10 Users Allowed
+              <Divider />Send up to 20 GB
+              <Divider />
+              <Button fluid className="button-sides">Learn More</Button>
+            </Responsive>
+          </Grid.Column>
+
+        </Grid>
+        <Header as='h5' icon textAlign='center' className="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+          Coded by <a href="https://www.gdteam.com.br/">Paulo Henrique Stocco Zancanaro</a>.
+        </Header>
+      </Container>
+    );
+  }
 }
+/*
+        <pre>
+          {JSON.stringify(this.state, null, 2)}
+        </pre>
+*/
 
 export default App;
