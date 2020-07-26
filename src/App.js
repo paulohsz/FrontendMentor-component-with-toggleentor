@@ -55,7 +55,7 @@ class App extends Component {
 
           <Grid.Column style={{marginTop: "-14px"}} className="middle-plan">
             <Responsive as={Segment}>
-            <Responsive minWidth={992} style={{height: "16px"}}>
+            <Responsive minWidth={768} style={{height: "16px"}}>
               
             </Responsive>
             Professional
@@ -68,7 +68,7 @@ class App extends Component {
               <Divider />Send up to 10 GB
               <Divider />
               <Button fluid className="button-sides">Learn More</Button>
-              <Responsive minWidth={992} style={{height: "16px"}}>
+              <Responsive minWidth={768} style={{height: "16px"}}>
               
               </Responsive>
             </Responsive>
@@ -92,7 +92,7 @@ class App extends Component {
         </Grid>
         <Header as='h5' icon textAlign='center' className="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
-          Coded by <a href="https://github.com/paulohsz/">Paulo Henrique Stocco Zancanaro</a>.
+          Coded by <a href="https://www.linkedin.com/in/paulohsz/" target="_blank" rel="noopener noreferrer">Paulo Henrique Stocco Zancanaro</a>.
         </Header>
       </Container>
     );
