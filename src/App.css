@@ -62,12 +62,15 @@
 .ui.toggle.checkbox input:checked~label:after {
     left: 2.2rem;
 }
-.headerTitle {
-    color: var(--grayish-blue);
+.header-Title {
+    color: var(--grayish-blue) !important;
     padding-top: 30px !important;
     padding-bottom: 15px !important;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
 }
-.headerSubTitle {
+.header-SubTitle {
     color: var(--light-grayish-blue);
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -75,7 +78,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 55px;
-
+    font-size: 15px;
+    padding-top: 15px;
 }
 .planNormal {
     font-size: 15px ;
@@ -87,7 +91,17 @@
     margin-bottom: 20px;
     padding: 0 30px;
     color: var(--dark-grayish-blue);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+.price .money-sign {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
 .middlePlan .price { 
     color: #ffffff;
 }

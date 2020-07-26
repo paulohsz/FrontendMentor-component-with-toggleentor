@@ -23,21 +23,23 @@ class App extends Component {
   render() {
     return (
       <Container className="cont-b">
-        <Header as='h2' icon textAlign='center'>
-          <Header.Content className="headerTitle">Our Pricing</Header.Content>
-          
-          <div style={{ fontSize: "15px" }} className="headerSubTitle">Annually <Checkbox 
+        <div className="header-Title">
+          Our Pricing
+          <span style={{ fontSize: "15px" }} className="header-SubTitle">Annually <Checkbox 
             toggle 
             checked={this.state.checkBox}  
             onClick={() => {this.setState( ({checkBox}) => ({checkBox: !checkBox}))}} 
           /> Monthly
+          </span>
           </div>
-        </Header>
         <Grid stackable textAlign="center" columns={3} className="planNormal">
           <Grid.Column>
             <Responsive as={Segment}>
               Basic
-              <div className="price">${ this.state.checkBox ? "19.99" : "199.99" }</div>
+              <div className="price">
+                <span className="money-sign">$</span>
+                <span>{ this.state.checkBox ? "19.99" : "199.99" }</span>
+              </div>
               <Divider />500 GB Storage
               <Divider />
                 2 Users Allowed
@@ -54,7 +56,10 @@ class App extends Component {
               
             </Responsive>
             Professional
-              <div className="price">${ this.state.checkBox ? "24.99" : "249.99" }</div>
+              <div className="price">
+                <span className="money-sign">$</span>
+                <span>{ this.state.checkBox ? "24.99" : "249.99" }</span>
+              </div>
               <Divider />1 TB Storage
               <Divider />5 Users Allowed
               <Divider />Send up to 10 GB
@@ -69,7 +74,10 @@ class App extends Component {
           <Grid.Column>
             <Responsive as={Segment}>
               Basic
-              <div className="price">${ this.state.checkBox ? "39.99" : "399.99" }</div>
+              <div className="price">
+                <span class="money-sign">$</span>
+                <span>{ this.state.checkBox ? "39.99" : "399.99" }</span>
+              </div>
               <Divider />2 TB Storage
               <Divider />10 Users Allowed
               <Divider />Send up to 20 GB
