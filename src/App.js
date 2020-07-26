@@ -16,8 +16,6 @@ class App extends Component {
 
     this.state = this.stateInicial;
 
-
-
   }
 
   render() {
@@ -37,7 +35,7 @@ class App extends Component {
           Monthly</div>
           
           </div>
-        <Grid stackable textAlign="center" columns={3} className="planNormal">
+        <Grid stackable textAlign="center" columns={3} className="plan-normal">
           <Grid.Column>
             <Responsive as={Segment}>
               Basic
