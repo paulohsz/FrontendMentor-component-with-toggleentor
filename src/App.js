@@ -80,7 +80,7 @@ class App extends Component {
             <Responsive as={Segment}>
               Basic
               <div className="price">
-                <span class="money-sign">$</span>
+                <span className="money-sign">$</span>
                 <span>{ this.state.checkBox ? "39.99" : "399.99" }</span>
               </div>
               <Divider />2 TB Storage
