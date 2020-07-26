@@ -25,15 +25,16 @@ class App extends Component {
       <Container className="cont-b">
         <div className="header-Title">
           Our Pricing
-          <span className="header-SubTitle">Annually </span>
+          <div className="header-SubTitle">Annually
           <Checkbox 
             toggle 
             checked={this.state.checkBox}  
             onClick={() => {this.setState( ({checkBox}) => ({checkBox: !checkBox}))}}
-            label="Annually or Monthly"
+            /*label="Annually or Monthly"*/
             id="valueYearMonth"
+            readOnly={false}
           />
-          <span className="header-SubTitle">Monthly</span>
+          Monthly</div>
           
           </div>
         <Grid stackable textAlign="center" columns={3} className="planNormal">
