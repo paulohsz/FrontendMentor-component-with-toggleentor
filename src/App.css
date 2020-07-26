@@ -5,7 +5,7 @@
     --grayish-blue: hsl(234, 13%, 49%);
     --dark-grayish-blue: hsl(232, 13%, 33%);
   }
-.body {
+body {
     font: 700 15px/1.5 'Montserrat', sans-serif !important;
     background: url('/images/bg-top.svg')    top    right no-repeat fixed,
                 url("/images/bg-bottom.svg") bottom left  no-repeat fixed var(--very-light-grayish-blue) !important;
@@ -35,8 +35,7 @@
     border: none !important;
     box-shadow: 3px 3px 3px rgba(34,36,38,.15);
 }
-
-.middlePlan .ui.segment{
+.middle-plan .ui.segment{
     background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: #ffffff;
 }
@@ -102,7 +101,7 @@
     margin-right: 5px;
 }
 
-.middlePlan .price { 
+.middle-plan .price { 
     color: #ffffff;
 }
 .button-sides {
@@ -115,11 +114,11 @@
     padding: 12px 8px !important;
     margin-top: 24px !important;
 }
-.middlePlan .button-sides { 
+.middle-plan .button-sides { 
     color: hsl(237, 63%, 64%) !important;
     background: #fff !important;
 }
-.middlePlan .ui.divider:not(.vertical):not(.horizontal) {
+.middle-plan .ui.divider:not(.vertical):not(.horizontal) {
     border-top: 1px solid hsl(236, 72%, 79%);
     border-bottom: 1px solid transparent;
 }

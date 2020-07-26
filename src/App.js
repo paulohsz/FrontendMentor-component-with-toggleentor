@@ -53,7 +53,7 @@ class App extends Component {
             </Responsive>
           </Grid.Column>
 
-          <Grid.Column style={{marginTop: "-14px"}} className="middlePlan">
+          <Grid.Column style={{marginTop: "-14px"}} className="middle-plan">
             <Responsive as={Segment}>
             <Responsive minWidth={992} style={{height: "16px"}}>
               
