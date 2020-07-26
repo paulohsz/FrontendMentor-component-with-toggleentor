@@ -25,12 +25,16 @@ class App extends Component {
       <Container className="cont-b">
         <div className="header-Title">
           Our Pricing
-          <span style={{ fontSize: "15px" }} className="header-SubTitle">Annually <Checkbox 
+          <span className="header-SubTitle">Annually </span>
+          <Checkbox 
             toggle 
             checked={this.state.checkBox}  
-            onClick={() => {this.setState( ({checkBox}) => ({checkBox: !checkBox}))}} 
-          /> Monthly
-          </span>
+            onClick={() => {this.setState( ({checkBox}) => ({checkBox: !checkBox}))}}
+            label="Annually or Monthly"
+            id="valueYearMonth"
+          />
+          <span className="header-SubTitle">Monthly</span>
+          
           </div>
         <Grid stackable textAlign="center" columns={3} className="planNormal">
           <Grid.Column>
